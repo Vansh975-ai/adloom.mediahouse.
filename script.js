@@ -1,6 +1,3 @@
-// Import AOS library
-const AOS = window.AOS;
-
 // Initialize AOS (Animate On Scroll)
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS if available
