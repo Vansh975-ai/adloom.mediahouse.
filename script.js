@@ -107,13 +107,29 @@ contactForm.addEventListener("submit", function (e) {
   this.reset()
 })
 
-// Mobile Menu Toggle (for future enhancement)
+// Mobile Menu Toggle
 const mobileMenuToggle = document.getElementById("mobileMenuToggle")
 const navLinks = document.querySelector(".nav-links")
 
 mobileMenuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("mobile-active")
   mobileMenuToggle.classList.toggle("active")
+})
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("mobile-active")
+    mobileMenuToggle.classList.remove("active")
+  })
+})
+
+// Close mobile menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".nav") && navLinks.classList.contains("mobile-active")) {
+    navLinks.classList.remove("mobile-active")
+    mobileMenuToggle.classList.remove("active")
+  }
 })
 
 // Header Background on Scroll
