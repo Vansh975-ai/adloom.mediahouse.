@@ -120,9 +120,9 @@ mobileMenuToggle.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   const header = document.querySelector(".header")
   if (window.scrollY > 100) {
-    header.style.backgroundColor = "rgba(13, 13, 13, 0.95)"
+    header.style.backgroundColor = "rgba(255, 255, 255, 0.95)"
   } else {
-    header.style.backgroundColor = "#0D0D0D"
+    header.style.backgroundColor = "#ffffff"
   }
 })
 
