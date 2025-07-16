@@ -39,9 +39,9 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--primary-bg);
+  background-color: #ffffff;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #e0e0e0;
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .nav-links a {
-  color: var(--text-primary);
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
   font-weight: 500;
@@ -80,7 +80,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--accent-color);
+  color: #1e3a8a;
 }
 
 .mobile-menu-toggle {
@@ -95,14 +95,14 @@ body {
 .mobile-menu-toggle span {
   width: 25px;
   height: 3px;
-  background-color: var(--text-primary);
+  background-color: #000000;
   transition: all 0.3s ease;
 }
 
 /* Hero Section */
 .hero {
-  background-color: var(--primary-bg);
-  color: var(--text-primary);
+  background-color: #ffffff;
+  color: #000000;
   display: flex;
   align-items: center;
   min-height: 100vh;
@@ -117,7 +117,7 @@ body {
 }
 
 .hero-title {
-  color: var(--accent-color);
+  color: #1e3a8a;
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -125,7 +125,7 @@ body {
 }
 
 .hero-subtitle {
-  color: var(--text-primary);
+  color: #000000;
   font-size: 1.4rem;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -133,21 +133,21 @@ body {
 
 .cta-button {
   display: inline-block;
-  background-color: var(--accent-color);
-  color: var(--primary-bg);
+  background-color: #ff6b35;
+  color: #ffffff;
   padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
   font-size: 1.1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px var(--shadow);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
 .cta-button:hover {
-  background-color: var(--accent-hover);
+  background-color: #e55a2b;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px var(--shadow);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
 }
 
 .hero-image {
