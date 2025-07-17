@@ -205,90 +205,6 @@ body {
   z-index: 1;
 }
 
-/* Social Image Sections */
-.hero-social {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  justify-content: flex-start;
-}
-
-.small-social-image-container {
-  width: 150px;
-  height: 100px;
-  border: 2px dashed #ccc;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f9f9f9;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.small-social-image-container:hover {
-  border-color: #1e3a8a;
-  background-color: #f0f0f0;
-}
-
-.small-social-image-container img.social-pasted-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.social-image-placeholder {
-  color: #666;
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 0.5rem;
-  z-index: 0;
-}
-
-.social-links-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-}
-
-.small-social-image-container:hover .social-links-overlay {
-  opacity: 1;
-}
-
-.social-link-btn {
-  padding: 4px 8px;
-  background-color: rgba(30, 58, 138, 0.9);
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  width: 80%;
-}
-
-.social-link-btn:hover {
-  background-color: rgba(30, 58, 138, 1);
-}
-
 /* Landscape Image Section */
 .landscape-section {
   background-color: var(--secondary-bg);
@@ -782,12 +698,6 @@ section {
     margin-bottom: 1.5rem;
   }
 
-  .hero-social {
-    justify-content: center;
-    flex-direction: column; /* Stack vertically on mobile */
-    align-items: center; /* Center items on mobile */
-  }
-
   .contact-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -823,11 +733,6 @@ section {
 
   .landscape-image {
     height: 200px;
-  }
-
-  .small-social-image-container {
-    width: 200px; /* Slightly larger on mobile for better touch */
-    height: 120px;
   }
 }
 
