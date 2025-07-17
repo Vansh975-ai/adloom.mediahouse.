@@ -142,15 +142,6 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Parallax Effect for Hero Section
-window.addEventListener("scroll", () => {
-  const scrolled = window.pageYOffset
-  const heroImage = document.querySelector(".hero-image img")
-  if (heroImage) {
-    heroImage.style.transform = `translateY(${scrolled * 0.5}px)`
-  }
-})
-
 // Enhanced floating text animation on scroll
 const floatingTextObserver = new IntersectionObserver(
   (entries) => {
